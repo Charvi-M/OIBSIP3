@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Title"
+        android:ems="10"
+        android:hint="@string/enter_title"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="dd-mm-yyyy"
+        android:ems="10"
+        android:hint="@string/enter_date"
+        android:inputType="text|textAutoComplete"
+        android:minHeight="48dp"
+        tools:ignore="TextFields,VisualLintTextFieldSize">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_description"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:textColorHint="#8D6E63"
+        android:autofillHints="Today I..."
+        tools:ignore="VisualLintTextFieldSize"></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:id="@+id/add_record"
+        android:text="@string/add_note"/>
+
+
+
+</LinearLayout>
